@@ -1,0 +1,40 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class*="_icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+._icon-arrow:before {
+	content: "\e900";
+}
+
+._icon-face:before {
+	content: "\e901";
+	color: #eb4436;
+}
+
+._icon-insta:before {
+	content: "\e902";
+	color: #eb4436;
+}
+
+._icon-lang:before {
+	content: "\e903";
+}
+
+._icon-link:before {
+	content: "\e904";
+	color: #eb4436;
+}

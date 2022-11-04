@@ -1,0 +1,43 @@
+// Заголовки, общие БЄМ блоки и проче...
+.button {
+	position: relative;
+	display: inline-block;
+	padding: rem(16) rem(34);
+	background: linear-gradient(110deg, #0B0B0B 31.28%, #D94343 31.28%, #E84747 50.02%, #E84A47 70.38%, #F8C02E 70.39%);
+	border-radius: rem(50);
+	font-weight: 600;
+	font-size: rem(20);
+	line-height: math.div(24, 20);
+	color: #ffffff;
+	transition: opacity 0.5s ease-in-out, color 0.5s ease 0s;
+	z-index: 1;
+
+	&::before {
+		content: '';
+		display: block;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(180deg, #9e9bff 31.28%, #93f82e 70.39%);
+		border-radius: rem(50);
+		transition: opacity 0.5s ease-in-out;
+		z-index: -1;
+	}
+
+	@media (any-hover: hover) {
+		&:hover::before {
+			opacity: 1;
+			transition: opacity 0.5s ease-in-out;
+		}
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			color: #000000;
+			transition: color 0.5s ease 0s;
+		}
+	}
+}
