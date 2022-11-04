@@ -67,16 +67,15 @@
 
 	// .select__options
 	&__options {
-		color: #000;
+		color: #000000;
 		position: absolute;
-		top: 29px;
-		border-radius: 0 0 4px 4px;
+		top: rem(29);
+		border-radius: 0 0 rem(4) rem(4);
 		min-width: 100%;
 		left: 0;
 		background-color: #fff;
-		border: 1px solid #d9d9d9;
-		border-top: 0;
-		padding: 10px 0px 5px 0px;
+		box-shadow: rem(0) rem(10) rem(10) rgba(255, 0, 0, 0.5);
+		padding: rem(10) rem(0) rem(5) rem(0);
 	}
 
 	// .select__scroll
@@ -96,11 +95,13 @@
 
 	// .select__option
 	&__option {
+		font-weight: 600;
 		width: 100%;
 		text-align: left;
 		cursor: pointer;
-		padding: 5px 15px;
+		padding: rem(5) rem(15);
 		color: inherit;
+		transition: background-color 0.3s ease 0s;
 
 		&._select-selected {
 			background-color: #eee;
@@ -108,7 +109,9 @@
 
 		@media (any-hover: hover) {
 			&:hover {
-				background: #d9d9d9;
+				background-color: #F8C02E;
+				border-radius: rem(5);
+				transition: background-color 0.3s ease 0s;
 			}
 		}
 	}
