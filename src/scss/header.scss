@@ -82,14 +82,9 @@
 .action-header {
 	display: flex;
 	align-items: center;
-	@include adaptiveValue("gap", 131, -100);
+	@include adaptiveValue("gap", 131, -150);
 	@include adaptiveValue("padding-right", 40, -50);
-	/* .action-header__btn */
-
-	&__btn {}
 }
-
-.btn {}
 
 //====================================================================================================
 
@@ -109,8 +104,28 @@
 			cursor: default;
 		}
 
-		span,
-		&::before,
+		span {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: rem(2);
+			background-color: #E84747;
+			border-radius: rem(5);
+		}
+
+		&::before {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: rem(2);
+			background-color: #F8C02E;
+			border-radius: rem(5);
+		}
+
 		&::after {
 			content: "";
 			transition: all 0.3s ease 0s;
@@ -119,6 +134,7 @@
 			width: 100%;
 			height: rem(2);
 			background-color: #000;
+			border-radius: rem(5);
 		}
 
 		&::before {
