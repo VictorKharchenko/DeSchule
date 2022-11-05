@@ -1,3 +1,54 @@
 //====================================================================================================
+.hallo {
+
+	/* .hallo__container */
+
+	&__container {
+		display: flex;
+		@include adaptiveValue("padding-top", 156, 91);
+	}
+
+	/* .hallo__content */
+
+	&__content {
+		max-width: 100%;
+	}
+
+	/* .hallo__maintitle */
+
+	&__maintitle {
+		font-weight: 700;
+		@include adaptiveValue("font-size", 144, 56);
+		line-height: math.div(176, 144);
+		color: #E14545;
+		margin-bottom: rem(-50);
+		@include adaptiveValue("margin-bottom", -50, -20);
+	}
+
+	/* .hallo__title */
+
+	&__title {}
+
+	/* .hallo__subtitle */
+
+	&__subtitle {}
+
+	/* .hallo__text */
+
+	&__text {}
+
+	/* .hallo__button */
+
+	&__button {
+		@include adaptiveValue("padding-left", 37, 28);
+		@include adaptiveValue("padding-right", 37, 28);
+	}
+
+	/* .hallo__avatar */
+
+	&__avatar {
+		max-width: 100%;
+	}
+}
 
 //====================================================================================================
