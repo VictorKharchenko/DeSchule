@@ -12,7 +12,7 @@
 */
 
 // Включить/выключить FLS (Full Logging System) (в работе)
-window['FLS'] = true;
+window["FLS"] = true;
 
 // Подключение основного файла стилей
 import "../scss/style.scss";
@@ -30,7 +30,7 @@ flsFunctions.isWebp();
 /* Добавление loaded для HTML после полной загрузки страницы */
 // flsFunctions.addLoadedClass();
 /* Модуль для работы с меню (Бургер) */
-// flsFunctions.menuInit();
+flsFunctions.menuInit();
 /* Учет плавающей панели на мобильных устройствах при 100vh */
 // flsFunctions.fullVHfix();
 
@@ -66,7 +66,7 @@ flsFunctions.isWebp();
 Модуль параллакса мышью
 Документация: https://template.fls.guru/template-docs/modul-animacii-parallaks-obektov-pri-dvizhenii-myshi.html
 */
-// import './libs/parallax-mouse.js'
+import "./libs/parallax-mouse.js";
 
 // ========================================================================================================================================================================================================================================================
 // Работа с формами ========================================================================================================================================================================================================================================================
@@ -93,7 +93,7 @@ flsForms.formFieldsInit({
 // flsForms.formRating();
 
 /* Модуль работы с select. */
-import './libs/select.js'
+import "./libs/select.js";
 
 /* Модуль работы с календарем */
 // import './files/forms/datepicker.js'
