@@ -20,8 +20,9 @@
 	background: linear-gradient(110deg, #0B0B0B 31.28%, #D94343 31.28%, #E84747 50.02%, #E84A47 70.38%, #F8C02E 70.39%);
 	border-radius: rem(50);
 	font-weight: 600;
-	font-size: rem(20);
+	@include adaptiveValue("font-size", 20, 18);
 	line-height: math.div(24, 20);
+	justify-content: center;
 	color: #ffffff;
 	transition: opacity 0.5s ease-in-out, color 0.5s ease 0s;
 	z-index: 1;

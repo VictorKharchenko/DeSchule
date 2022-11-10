@@ -24,7 +24,6 @@
 		display: flex;
 		align-items: center;
 		height: rem(30);
-		padding: 0 rem(15);
 		gap: rem(10);
 
 		>* {
@@ -70,12 +69,12 @@
 		color: #000000;
 		position: absolute;
 		top: rem(29);
-		border-radius: 0 0 rem(4) rem(4);
+		border-radius: 0 0 rem(5) rem(5);
 		min-width: 100%;
 		left: 0;
 		background-color: #fff;
 		box-shadow: rem(0) rem(10) rem(10) rgba(255, 0, 0, 0.5);
-		padding: rem(10) rem(0) rem(5) rem(0);
+		padding: rem(10) rem(0) rem(0) rem(0);
 	}
 
 	// .select__scroll
@@ -100,6 +99,7 @@
 		text-align: left;
 		cursor: pointer;
 		padding: rem(5) rem(15);
+		border-radius: 0 0 rem(5) rem(5);
 		color: inherit;
 		transition: background-color 0.3s ease 0s;
 
