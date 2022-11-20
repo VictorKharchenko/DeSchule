@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
-@@include('html/_head.htm',{
-"title":"HomePage"
-})
+@@include('html/_head.htm',{ "title":"HomePage" })
 
 <body>
 	<div class="wrapper">
@@ -10,19 +8,79 @@
 		<main class="page">
 			<section class="page__hallo hallo">
 				<div class="hallo__container">
-					<div class="hallo__content">
-						<h1 class="hallo__maintitle">Hallo</h1>
-						<h2 class="hallo__title title">Deutsch!</h2>
-						<h3 class="hallo__subtitle subtitle">Курс німецкої мови з гарантією результату!</h3>
-						<div class="hallo__text text">
-							Вивчай німецьку легко та цікаво з нашою унікальною
-							методикою асоціативного викладення матеріалу.
+					<div class="hallo__items">
+						<div class="hallo__content">
+							<h1 class="hallo__maintitle">Hallo</h1>
+							<h2 class="hallo__title title">Deutsch!</h2>
+							<h3 class="hallo__subtitle subtitle">
+								Курс німецкої мови з гарантією результату!
+							</h3>
+							<div class="hallo__text text">
+								Вивчай німецьку легко та цікаво з нашою унікальною
+								методикою асоціативного викладення матеріалу.
+							</div>
+							<a href="#" class="hallo__button button">
+								Спробувати безкоштовно!
+							</a>
 						</div>
-						<a href="#" class="hallo__button button">Спробувати безкоштовно!</a>
+						<div data-prlx-mouse class="hallo__avatar avatar-hallo">
+							<img class="avatar-hallo__img" src="@img/hallo/avatar.png" alt="Avatar" />
+						</div>
 					</div>
-					<div data-prlx-mouse class="hallo__avatar avatar-hallo">
-						<img class="avatar-hallo__img" src="@img/hallo/avatar.png" alt="Avatar">
-					</div>
+					<ul class="hallo__list">
+						<li class="hallo__item hallo__item--memory">
+							<div data-prlx-mouse data-prlx-dxr class="hallo__decor decor-hallo">
+								<img src="@img/hallo/decor/01.png" alt="Decor" class="decor-hallo__decor01" />
+							</div>
+							<div data-prlx-mouse class="hallo__icon icon-hallo">
+								<img src="@img/hallo/icon/memory.png" alt="Icon" class="icon-hallo__memory" />
+							</div>
+							<div class="hallo__call call-hallo">
+								<p class="call-hallo__memory">
+									<span>Тренуй </span>пам’ять
+								</p>
+							</div>
+						</li>
+						<li class="hallo__item hallo__item--books">
+							<div data-prlx-mouse class="hallo__decor decor-hallo">
+								<img src="@img/hallo/decor/02.png" alt="Decor" class="decor-hallo__decor02" />
+							</div>
+							<div data-prlx-mouse data-prlx-dxr class="hallo__icon icon-hallo">
+								<img src="@img/hallo/icon/books.png" alt="Icon" class="icon-hallo__books" />
+							</div>
+							<div class="hallo__call call-hallo">
+								<p class="call-hallo__books">
+									<span>Читай </span>літературу
+								</p>
+							</div>
+						</li>
+						<li class="hallo__item hallo__item--confidence">
+							<div data-prlx-mouse data-prlx-dxr class="hallo__decor decor-hallo">
+								<img src="@img/hallo/decor/03.png" alt="Decor" class="decor-hallo__decor03" />
+							</div>
+							<div data-prlx-mouse class="hallo__icon icon-hallo">
+								<img src="@img/hallo/icon/confidence.png" alt="Icon" class="icon-hallo__confidence" />
+							</div>
+							<div class="hallo__call call-hallo">
+								<p class="call-hallo__confidence">
+									<span>Розвивай </span>впевненість
+								</p>
+							</div>
+						</li>
+						<li class="hallo__item hallo__item--travel">
+							<div data-prlx-mouse class="hallo__decor decor-hallo">
+								<img src="@img/hallo/decor/04.png" alt="Decor" class="decor-hallo__decor04" />
+							</div>
+							<div data-prlx-mouse data-prlx-dxr class="hallo__icon icon-hallo">
+								<img src="@img/hallo/icon/travel.png" alt="Icon" class="icon-hallo__travel" />
+							</div>
+							<div class="hallo__call call-hallo">
+								<p class="call-hallo__travel">
+									<span>Подорожуй</span>
+								</p>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</section>
 		</main>

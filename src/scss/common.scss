@@ -1,46 +1,53 @@
 // Заголовки, общие БЄМ блоки и проче...
 .page {
+   /* .page__hallo */
 
-	/* .page__hallo */
-
-	&__hallo {}
+   &__hallo {
+	 }
 }
 
 //========================================================================================================================================================
 .title {
-	font-weight: 800;
-	@include adaptiveValue("font-size", 160, 54);
-	line-height: math.div(195, 160);
-	color: #adadad;
-	text-transform: uppercase;
-	opacity: 0.5;
-	transform: matrix(1, 0, 0, 1, 0, 0);
+   font-weight: 800;
+   @include adaptiveValue("font-size", 160, 54);
+   line-height: math.div(195, 160);
+   color: #adadad;
+   text-transform: uppercase;
+   opacity: 0.5;
+   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 //========================================================================================================================================================
 .subtitle {
-	position: relative;
-	font-weight: 700;
-	@include adaptiveValue("font-size", 36, 24);
-	line-height: math.div(47.3, 36);
+   position: relative;
+   font-weight: 700;
+   @include adaptiveValue("font-size", 36, 24);
+   line-height: math.div(47.3, 36);
 
-	&::before {
-		content: '';
-		position: absolute;
-		width: rem(140);
-		height: rem(8);
-		left: 0;
-		@include adaptiveValue("bottom", -20, -10);
-		background: linear-gradient(110deg, #0B0B0B 31.28%, #D94343 31.28%, #E84747 50.63%, #E84A47 68.67%, #F8C02E 68.7%);
-		border-radius: rem(30);
-	}
+   &::before {
+      content: "";
+      position: absolute;
+      width: rem(140);
+      height: rem(8);
+      left: 0;
+      @include adaptiveValue("bottom", -20, -10);
+      background: linear-gradient(
+         110deg,
+         #0b0b0b 31.28%,
+         #d94343 31.28%,
+         #e84747 50.63%,
+         #e84a47 68.67%,
+         #f8c02e 68.7%
+      );
+      border-radius: rem(30);
+   }
 }
 
 //========================================================================================================================================================
 .text {
-	font-weight: 400;
-	@include adaptiveValue("font-size", 18, 14);
-	line-height: math.div(25.36, 18);
+   font-weight: 400;
+   @include adaptiveValue("font-size", 18, 14);
+   line-height: math.div(25.36, 18);
 }
 
 //========================================================================================================================================================
